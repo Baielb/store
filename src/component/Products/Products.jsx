@@ -22,7 +22,7 @@ const Products = () => {
     {data.map(el => {
         return(
             <div key={el.id}>
-                <img width={250} src={el.images[0]} alt="" />
+                <img width={250} src={el.category.image} alt="" />
                 {el.price + "  $"}  
                 <br />
                 {el.title}
